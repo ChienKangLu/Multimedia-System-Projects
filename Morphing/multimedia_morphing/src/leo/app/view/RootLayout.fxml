@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.image.*?>
+
+<BorderPane prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="leo.app.controller">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="Start">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#morphing" text="start morphing" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Image">
+            <items>
+              <MenuItem fx:id="bar_source" mnemonicParsing="false" onAction="#bar_choose_source" text="choose source image" />
+                  <MenuItem fx:id="bar_des" mnemonicParsing="false" onAction="#bar_choose_des" text="choose des image" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Clear">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#clearall" text="clear all" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <center>
+		<AnchorPane prefHeight="800.0" prefWidth="800.0">
+		   <children>
+            <SplitPane dividerPositions="0.29797979797979796" prefHeight="768.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                     <children>
+		                  <Button fx:id="start" layoutX="66.0" layoutY="545.0" mnemonicParsing="false" onAction="#morphing" text="start morphing" visible="false" />
+		                              <Button fx:id="source_btn" layoutX="66.0" layoutY="502.0" mnemonicParsing="false" onAction="#source_btn_choose" text="choose source" visible="false" />
+		                              <Button fx:id="des_btn" layoutX="64.0" layoutY="459.0" mnemonicParsing="false" onAction="#des_btn_choose" text="choose destination" visible="false" />
+                        <GridPane layoutX="38.0" layoutY="142.0" prefHeight="317.0" prefWidth="300.0">
+                          <columnConstraints>
+                            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints fillWidth="false" halignment="CENTER" hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="a">
+                                 <font>
+                                    <Font size="34.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="a_input" prefHeight="30.0" prefWidth="123.0" text="1" GridPane.columnIndex="1" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="b" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font size="34.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="b_input" prefHeight="30.0" prefWidth="123.0" text="2" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="p" GridPane.rowIndex="2">
+                                 <font>
+                                    <Font size="34.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="p_input" prefHeight="30.0" prefWidth="123.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="frame" GridPane.rowIndex="3">
+                                 <font>
+                                    <Font size="34.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="frame_input" prefHeight="30.0" prefWidth="123.0" text="5" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="line" GridPane.rowIndex="4">
+                                 <font>
+                                    <Font size="34.0" />
+                                 </font>
+                              </Text>
+                              <ComboBox fx:id="line_input" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                           </children>
+                        </GridPane>
+                        <Button layoutX="271.0" layoutY="722.0" mnemonicParsing="false" onAction="#dvalue" text="default" />
+                        <Separator layoutX="27.0" layoutY="141.0" prefHeight="3.0" prefWidth="308.0" />
+                        <Text layoutX="106.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Morphing">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="97.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Multimedia" wrappingWidth="167.4296875">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="43.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Information System">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="12.0" layoutY="751.0" strokeType="OUTSIDE" strokeWidth="0.0" text="資管碩一 M10509109 陸建綱">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                     <children>
+            		      <SplitPane dividerPositions="0.5" orientation="VERTICAL" prefHeight="600.0" prefWidth="700.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            		        <items>
+            		          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+            		               <children>
+            		                  <SplitPane dividerPositions="0.5" layoutX="136.0" layoutY="8.0" prefHeight="295.0" prefWidth="698.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            		                    <items>
+            		                      <AnchorPane focusTraversable="true" minHeight="0.0" minWidth="0.0" pickOnBounds="false" prefHeight="160.0" prefWidth="100.0" SplitPane.resizableWithParent="false">
+            		                           <children>
+                                                <Text layoutX="88.0" layoutY="203.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Source Image">
+                                                   <font>
+                                                      <Font size="37.0" />
+                                                   </font>
+                                                </Text>
+            		                              <ImageView fx:id="source" fitHeight="321.0" fitWidth="300.0" layoutX="57.0" layoutY="28.0" onMouseClicked="#drawline" pickOnBounds="true" preserveRatio="true">
+                                                   <cursor>
+                                                      <Cursor fx:constant="CROSSHAIR" />
+                                                   </cursor>
+                                                </ImageView>
+            		                           </children>
+            		                        </AnchorPane>
+            		                      <AnchorPane focusTraversable="true" minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+            		                           <children>
+                                                <Text layoutX="123.0" layoutY="203.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Des Image">
+                                                   <font>
+                                                      <Font size="37.0" />
+                                                   </font>
+                                                </Text>
+            		                              <ImageView fx:id="des" fitHeight="321.0" fitWidth="300.0" layoutX="56.0" layoutY="28.0" onMouseClicked="#drawline" pickOnBounds="true" preserveRatio="true">
+                                                   <cursor>
+                                                      <Cursor fx:constant="CROSSHAIR" />
+                                                   </cursor>
+                                                </ImageView>
+            		                           </children>
+            		                        </AnchorPane>
+            		                    </items>
+            		                  </SplitPane>
+            		               </children>
+            		            </AnchorPane>
+            		          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+            		               <children>
+                                    <SplitPane dividerPositions="0.5" prefHeight="343.0" prefWidth="798.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                      <items>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="341.0" prefWidth="279.0">
+                                             <children>
+                                                <Text layoutX="85.0" layoutY="203.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Frame Images">
+                                                   <font>
+                                                      <Font size="37.0" />
+                                                   </font>
+                                                </Text>
+                        		                  <ImageView fx:id="show_pic" fitHeight="321.0" fitWidth="300.0" layoutX="57.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true" />
+                                                <Button fx:id="last" layoutX="8.0" layoutY="174.0" mnemonicParsing="false" onAction="#last_frame" text="←" />
+                                                <Button fx:id="next" layoutX="364.0" layoutY="174.0" mnemonicParsing="false" onAction="#next_frame" text="→" />
+                                             </children>
+                                          </AnchorPane>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                                             <children>
+                                                <Text layoutX="61.0" layoutY="203.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Morphing Result">
+                                                   <font>
+                                                      <Font size="37.0" />
+                                                   </font>
+                                                </Text>
+                                                <ImageView fx:id="final_gif" fitHeight="321.0" fitWidth="300.0" layoutX="56.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true" />
+                                             </children>
+                                          </AnchorPane>
+                                      </items>
+                                    </SplitPane>
+            		               </children>
+            		            </AnchorPane>
+            		        </items>
+            		      </SplitPane>
+                     </children>
+                  </AnchorPane>
+              </items>
+            </SplitPane>
+		   </children>
+		</AnchorPane>
+   </center>
+</BorderPane>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="800.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="leo.app.controller">
+   <children>
+      <SplitPane dividerPositions="0.5476190476190477" layoutX="67.0" layoutY="23.0" orientation="VERTICAL" prefHeight="600.0" prefWidth="700.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <SplitPane dividerPositions="0.5" layoutX="136.0" layoutY="8.0" prefHeight="295.0" prefWidth="698.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <items>
+                      <AnchorPane focusTraversable="true" minHeight="0.0" minWidth="0.0" pickOnBounds="false" prefHeight="160.0" prefWidth="100.0" SplitPane.resizableWithParent="false">
+                           <children>
+                              <ImageView fx:id="source" fitHeight="321.0" fitWidth="300.0" layoutX="47.0" layoutY="26.0" onMouseClicked="#drawline" pickOnBounds="true" preserveRatio="true" />
+                              <Button fx:id="source_btn" layoutX="135.0" layoutY="374.0" mnemonicParsing="false" onAction="#source_btn_choose" text="choose source" />
+                           </children>
+                        </AnchorPane>
+                      <AnchorPane focusTraversable="true" minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                           <children>
+                              <ImageView fx:id="des" fitHeight="321.0" fitWidth="300.0" layoutX="47.0" layoutY="26.0" onMouseClicked="#drawline" pickOnBounds="true" preserveRatio="true" />
+                              <Button fx:id="des_btn" layoutX="118.0" layoutY="374.0" mnemonicParsing="false" onAction="#des_btn_choose" text="choose destination" />
+                           </children>
+                        </AnchorPane>
+                    </items>
+                  </SplitPane>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <ImageView fx:id="show_pic" fitHeight="321.0" fitWidth="300.0" layoutX="52.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true" />
+                  <Button fx:id="start" layoutX="549.0" layoutY="148.0" mnemonicParsing="false" onAction="#morphing" text="start morphing" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
