@@ -6,7 +6,6 @@ This is my homeworks and final project of Multimedia-System-Reports. Bezier Curv
 + GUI library : javaFx
 + Image library : opencv
 
-
 ## Enviroment
 + OS: Windows7
 + JRE: 1.8.0_65
@@ -73,6 +72,29 @@ Wrapping (shape) + Cross dissolving (color)
   </tr>
 </table>
 </p>
+
+### Demo
+<table>
+  <tr align="center">
+    <td><img src="https://github.com/ChienKangLu/Multimedia-System-Reports/blob/master/Morphing%20img/demo1.png" /></td>
+    <td><img src="https://github.com/ChienKangLu/Multimedia-System-Reports/blob/master/Morphing%20img/demo2.png" /></td>
+    <td><img src="https://github.com/ChienKangLu/Multimedia-System-Reports/blob/master/Morphing%20img/demo3.png" /></td>
+  </tr>
+  <tr align="center">
+    <td>Pick two images</td>
+    <td>Draw corresponding lines</td>
+    <td>Create Morphing</td>
+</table>
+
+### Result
+<p align="center">
+  <img src="https://github.com/ChienKangLu/Multimedia-System-Reports/blob/master/Morphing/output/z.gif" />
+</p>
+
+## Reference
++ Multimedia system course of international management department in NTUST
++ [Feture-Based Image Metamorphosis](https://dl.acm.org/citation.cfm?id=134003)
+
 
 
 
