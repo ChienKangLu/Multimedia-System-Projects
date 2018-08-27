@@ -45,10 +45,10 @@ Wrapping (shape) + Cross dissolving (color)
     <td><img height="100" src="https://github.com/ChienKangLu/Multimedia-System-Reports/blob/master/Morphing%20img/5.png" /></td>
   </tr>
   <tr align="center">
-    <td>Single line pair</td>
-    <td>Calculate u</td>
-    <td>Calculate v</td>
-    <td>Use u and v to find  X’</td>
+    <td>1. Single line pair</td>
+    <td>2. Calculate u</td>
+    <td>3. Calculate v</td>
+    <td>4. Use u and v to find  X’</td>
   </tr>
   <tr align="center">
     <td><img height="100" src="https://github.com/ChienKangLu/Multimedia-System-Reports/blob/master/Morphing%20img/6.png" /></td>
@@ -57,18 +57,17 @@ Wrapping (shape) + Cross dissolving (color)
     <td><img height="100" src="https://github.com/ChienKangLu/Multimedia-System-Reports/blob/master/Morphing%20img/9.png" /></td>
   </tr>
   <tr align="center">
-    <td>Multiple line pair</td>
-    <td>Decide the weight  for each point</td>
-    <td>Rotate the wrap line</td>
-    <td>Calculate middle line</td>
+    <td>5. Multiple line pair</td>
+    <td>6. Decide the weight  for each point</td>
+    <td>7. Rotate the wrap line</td>
+    <td>8. Calculate middle line</td>
   </tr>
   <tr align="center">
     <td><img height="100" src="https://github.com/ChienKangLu/Multimedia-System-Reports/blob/master/Morphing%20img/10.png" /></td>
   </tr>
   <tr align="center">
-    <td>Use bilinear interpolation to find the x</td>
+    <td>9. Use bilinear interpolation to find the x</td>
   </tr>
-  
 </table>
 </p>
 
