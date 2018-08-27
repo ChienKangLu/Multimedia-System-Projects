@@ -3,6 +3,9 @@ This is my homeworks and final project of Multimedia-System-Reports. Bezier Curv
 
 ## Impelmentation
 + Java
++ GUI library : javaFx
++ Image library : opencv
+
 
 ## Enviroment
 + OS: Windows7
