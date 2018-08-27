@@ -1,5 +1,5 @@
 # Multimedia-System-Reports
-This is my homeworks and final project of Multimedia-System-Reports. Bezier Curve and Fractal is implemented by recursive way. The final project about **morphing** is implemented by following the algorithm from **Feture-Based Image Metamorphosis** which is proposed by Beir et al in 1992.
+This is my homeworks and final project of Multimedia-System-Reports. Bezier Curve and Fractal is implemented by recursive way. The final project about **morphing** is implemented by following the algorithm proposed by Beir et al in 1992.
 
 ## Impelmentation
 + Java
