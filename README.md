@@ -38,18 +38,37 @@ Wrapping (shape) + Cross dissolving (color)
 ### Algorithm
 <p align="center">
 <table>
-  <tr>
+  <tr align="center">
     <td><img height="100" src="https://github.com/ChienKangLu/Multimedia-System-Reports/blob/master/Morphing%20img/2.png" /></td>
     <td><img height="100" src="https://github.com/ChienKangLu/Multimedia-System-Reports/blob/master/Morphing%20img/3.png" /></td>
     <td><img height="100" src="https://github.com/ChienKangLu/Multimedia-System-Reports/blob/master/Morphing%20img/4.png" /></td>
     <td><img height="100" src="https://github.com/ChienKangLu/Multimedia-System-Reports/blob/master/Morphing%20img/5.png" /></td>
   </tr>
-  <tr>
+  <tr align="center">
+    <td>Single line pair</td>
+    <td>Calculate u</td>
+    <td>Calculate v</td>
+    <td>Use u and v to find  X’</td>
+  </tr>
+  <tr align="center">
     <td><img height="100" src="https://github.com/ChienKangLu/Multimedia-System-Reports/blob/master/Morphing%20img/6.png" /></td>
     <td><img height="100" src="https://github.com/ChienKangLu/Multimedia-System-Reports/blob/master/Morphing%20img/7.png" /></td>
     <td><img height="100" src="https://github.com/ChienKangLu/Multimedia-System-Reports/blob/master/Morphing%20img/8.png" /></td>
     <td><img height="100" src="https://github.com/ChienKangLu/Multimedia-System-Reports/blob/master/Morphing%20img/9.png" /></td>
   </tr>
+  <tr align="center">
+    <td>Multiple line pair</td>
+    <td>Decide the weight  for each point</td>
+    <td>Rotate the wrap line</td>
+    <td>Calculate middle line</td>
+  </tr>
+  <tr align="center">
+    <td><img height="100" src="https://github.com/ChienKangLu/Multimedia-System-Reports/blob/master/Morphing%20img/10.png" /></td>
+  </tr>
+  <tr align="center">
+    <td>Use bilinear interpolation to find the x</td>
+  </tr>
+  
 </table>
 </p>
 
