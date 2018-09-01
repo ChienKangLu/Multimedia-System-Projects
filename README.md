@@ -1,14 +1,11 @@
 # Multimedia-System-Reports
 This is my homeworks and final project of Multimedia-System-Reports. Bezier Curve and Fractal is implemented by recursive way. The final project about **morphing** is implemented by following the algorithm proposed by Beir et al in 1992.
 
-## Impelmentation
+## Develop tools and techniques
 + Java
 + GUI library : javaFx
 + Image library : opencv
-
-## Enviroment
-+ OS: Windows7
-+ JRE: 1.8.0_65
++ Eclipse
 
 ## Bezier Curve
 <table>
